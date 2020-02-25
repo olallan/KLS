@@ -27,6 +27,7 @@
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/magnific-popup.js"></script>
 	<script src="contactform/contactform.js"></script>
+	<script src="common.js"></script>
 
 </head>
 
@@ -123,37 +124,27 @@
             <h2 class="mark">Стати Лайфгардом</h2>
             <h6 class="mark">Для того щоб стати Лайфгардом заповніть форму</h6>
 			<div class="portfolioFilter">
-                <div class="form1">
-
-                    <div id="sendmessage">Ваші дані прийняті. Дякуємо!</div>
-                    <div id="errormessage">Помилка! Заповніть форму ще раз, будь ласка.</div>
-                    <form method="post" role="form" class="contactForm">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control input-text" id="name" placeholder="Прізвище" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="tname" class="form-control input-text" id="tname" placeholder="Ім'я" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="fname" class="form-control input-text" id="fname" placeholder="По-батькові" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control input-text" name="phone" id="phone" placeholder="Телефон" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control input-text" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control input-text" name="date" id="date" placeholder="Дата народження" data-rule="minlen:4" data-msg="Please enter a valid date" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
+			<div class="form1">
+				<form id="form">
+				<div class="form-group">
+						<input type="text" name="fname" placeholder="Призівище" required /><br />
+				</div>
+				<div class="form-group">
+						<input type="text" name="name" placeholder="ім'я" required /><br />
+				</div>
+				<div class="form-group">
+						<input type="text" name="lname" placeholder="По-батькові" required /><br />
+				</div>
+				<div class="form-group">
+						<input type="text" name="phone" placeholder="Телефон" required /><br />
+				</div>
+				<div class="form-group">
+						<input type="text" name="email" placeholder="Електронна адреса" required /><br />
+				</div>
+				<div class="form-group">
+						<input type="data" name="data" placeholder="Дата народження" required /><br />
+				</div>
+				 <div class="form-group">
                             <div class="sex images- checkbox-cover field-cover">
                                 <span class="sub-label-true">
                                     <span class="main-label">
@@ -191,10 +182,10 @@
                             </div>
                             <div class="validation"></div>
                         </div>
-                        <div class="text-center"><button type="submit" class="input-btn">Надіслати</button></div>
-                    </form>
-                    </div>
-                </div>
+					<div class="text-center"><button type="submit" class="input-btn">Надіслати</button></div>
+				</form>
+			</div>          
+            </div>
 		</div>
 	</section>
 	<!--main-section-end-->
